@@ -443,6 +443,9 @@ h3{
 .experience-box label{
     font-size: 15px;
     color: #777;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
 }
 .experience-box h4{
     text-align: center;
@@ -452,7 +455,14 @@ h3{
     cursor: pointer;
     box-shadow: 1px 8px 10px 2px var(--first-color);
 }
-
+.experience-about{
+    text-align: justify;
+}
+.research-content{
+    padding-left: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
 
 .modal {
     display: none; 
@@ -474,6 +484,23 @@ h3{
     background: var(--color-white);
     border-radius: 20px;
 }
+.modal-content .experience-box-details-RA-1.show-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    background: var(--color-white);
+    border-radius: 20px;
+}
+.modal-content .experience-box-details-RA-2.show-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    background: var(--color-white);
+    border-radius: 20px;
+}
+
 
 .modal-content .experience-box-details-CG.show-details {
     display: flex;
@@ -494,6 +521,18 @@ h3{
 }
 
 .experience-box-details-RA.show-details>img {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 25px;
+}
+.experience-box-details-RA-1.show-details>img {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 25px;
+}
+.experience-box-details-RA-2.show-details>img {
     margin-top: 20px;
     width: 100px;
     height: 100px;
@@ -522,7 +561,7 @@ h3{
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto;
+    margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
@@ -573,6 +612,8 @@ h3{
 .project-box label{
     font-size: 15px;
     color: #777;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .project-box:hover{
     z-index: 5;
@@ -598,6 +639,56 @@ h3{
 }
 
 .modal-content .project-box-details-p2.show-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    background: var(--color-white);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.modal-content .project-box-details-p3.show-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    background: var(--color-white);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.modal-content .project-box-details-p4.show-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    background: var(--color-white);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.modal-content .project-box-details-p5.show-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    background: var(--color-white);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.modal-content .project-box-details-p6.show-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    background: var(--color-white);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.modal-content .project-box-details-p7.show-details{
     display: flex;
     flex-direction: column;
     justify-content: center ;

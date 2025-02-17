@@ -1,578 +1,1008 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6L6PDZTZ89"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6L6PDZTZ89"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-6L6PDZTZ89');
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- --------- UNICONS ---------- -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+        <!-- --------- CSS ---------- -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- --------- FAVICON ---------- -->
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+        <title>Venkata Sai Reddy</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- --------------- HEADER --------------- -->
+            <nav id="header">
+                <div class="nav-logo">
+                    <p class="nav-name">Venkata Sai Reddy</p>
+                </div>
+                <div class="nav-menu" id="myNavMenu">
+                    <ul class="nav_menu_list">
+                        <li class="nav_list">
+                            <a href="#home" class="nav-link active-link">Home</a>
+                            <div class="circle"></div>
+                        </li>
+                        <li class="nav_list">
+                            <a href="#about" class="nav-link">About</a>
+                            <div class="circle"></div>
+                        </li>
+                        <li class="nav_list">
+                            <a href="#skills" class="nav-link">Skills</a>
+                            <div class="circle"></div>
+                        </li>
+                        <li class="nav_list">
+                            <a href="#profile" class="nav-link">Profile</a>
+                            <div class="circle"></div>
+                        </li>
+                        <li class="nav_list">
+                            <a href="#experience" class="nav-link">Experience</a>
+                            <div class="circle"></div>
+                        </li>
+                        <li class="nav_list">
+                            <a href="#projects" class="nav-link">Projects</a>
+                            <div class="circle"></div>
+                        </li>
+                        <li class="nav_list">
+                            <a href="#contact" class="nav-link">Contact</a>
+                            <div class="circle"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-button">
+                    <button class="btn" onclick="downloadResume()">Download CV <i class="uil uil-file-alt"></i></button>
+                </div>
+                <div class="nav-menu-btn">
+                    <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+                </div>
+            </nav>
+
+
+            <!-- -------------- MAIN ---------------- -->
+            <main class="wrapper">
+                <!-- -------------- FEATURED BOX ---------------- -->
+                <section class="featured-box" id="home">
+                    <div class="featured-text">
+                        <div class="featured-text-card">
+                        </div>
+                        <div class="featured-name">
+                            <p>I'm <span class="typedText"></span></p>
+                        </div>
+                        <div class="featured-text-info">
+                            <p>Experienced full stack developer adept at crafting robust and scalable web applications,
+                                combining expertise in frontend development with a strong command of backend
+                                technologies.
+                            </p>
+                        </div>
+                        <div class="featured-text-btn">
+                            <button class="btn blue-btn" onclick="navigateTo('contact')">Hire Me</button>
+                            <button class="btn" onclick="downloadResume()">Download CV <i
+                                    class="uil uil-file-alt"></i></button>
+                        </div>
+                        <div class="social_icons">
+                            <div class="icon"><i class="uil uil-linkedin-alt" onclick="redirectTo('linkedin')"></i>
+                            </div>
+                            <div class="icon"><i class="uil uil-github-alt" onclick="redirectTo('github')"></i></div>
+                            <div class="icon"><i class="uil uil-instagram" onclick="redirectTo('instagram')"></i></div>
+                        </div>
+                    </div>
+                    <div class="featured-image">
+                        <div class="image">
+                            <img src="assets/images/avatar.jpg" alt="avatar">
+                        </div>
+                    </div>
+                    <div class="scroll-icon-box">
+                        <a href="#about" class="scroll-btn">
+                            <i class="uil uil-mouse-alt"></i>
+                            <p>Scroll Down</p>
+                        </a>
+                    </div>
+
+                </section>
+                <!-- -------------- ABOUT BOX ---------------- -->
+                <section class="section" id="about">
+                    <div class="top-header">
+                        <h1>About Me</h1>
+                    </div>
+                    <div class="row">
+                        <div class="about-info">
+                            <h3>My introduction</h3>
+                            <p>
+                                I am a full stack developer. Leveraging my expertise in both backend and front-end
+                                technologies,
+                                I create visually stunning and intuitive user interfaces that deliver exceptional user
+                                experiences.
+                                I possess a strong command of back-end frameworks like SpringBoot and Django, databases,
+                                and
+                                cloud services,
+                                enabling me to build scalable and high-performing server-side architectures.
+                                Throughout my career, I have honed my skills in agile methodologies,
+                                collaborative teamwork, and continuous integration practices,
+                                allowing me to deliver innovative solutions that seamlessly blend aesthetics with
+                                functionality,
+                                exceeding client expectations every step of the way.
+                            </p>
+                            <div class="about-btn">
+                                <button class="btn" onclick="downloadResume()">Download CV <i
+                                        class="uil uil-import"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section" id="skills">
+                    <div class="top-header">
+                        <h1>Skills</h1>
+                    </div>
+                    <div class="row">
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Backend</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>JAVA</span>
+                                <span>Python</span>
+                                <span>SpringBoot</span>
+                                <span>Django</span>
+                                <span>Rest API's</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Frontend</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>React</span>
+                                <span>HTML5</span>
+                                <span>CSS</span>
+                                <span>Bootstrap</span>
+                                <span>MaterialUI</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Database</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>MySQL</span>
+                                <span>PostgreSQL</span>
+                                <span>Oracle</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Testing</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>Selenium</span>
+                                <span>Junit</span>
+                                <span>Mockito</span>
+                                <span>Automation</span>
+                                <span>Test Driven Development</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Other</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>Git</span>
+                                <span>GitHub</span>
+                                <span>AWS</span>
+                                <span>PCF</span>
+                                <span>Agile</span>
+                                <span>Jira</span>
+                                <span>Jenkins</span>
+                                <span>SonarQube</span>
+                                <span>OpenAI</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- -------------- Profile BOX ---------------- -->
+
+                <section class="section" id="profile">
+                    <div class="top-header">
+                        <h1>My Industrial Profile</h1>
+                    </div>
+                    <div class="profile-container">
+
+                        <div class="profile-box" onclick="navigateTo('experience')">
+                            <i class="uil uil-briefcase-alt"></i>
+                            <h3>Experience</h3>
+                            <label>3+ Years in the Industry</label>
+
+                        </div>
+                        <div class="profile-box" onclick="navigateTo('projects')">
+                            <i class="uil uil-award"></i>
+                            <h3>Projects</h3>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- -------------- Experience BOX ---------------- -->
+
+                <section class="section" id="experience">
+                    <div class="top-header">
+                        <h1>Experience</h1>
+                    </div>
+                    <div class="experience-container">
+                        <div class="experience-box" onclick="showExperienceDetails('RA-2')">
+                            <img src="assets/images/clark_logo.png" />
+                            <h3>Research Analyst</h3>
+                            <label>@Strategic Analytics and Institutional Research</label>
+                            <label><i class="uil uil-calender"></i> Sep 2024 - Present </label>
+                        </div>
+                        <div id="experienceModal-RA-2" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeExperienceDetails('RA-2')">&times;</span>
+                                <div class="experience-box-details-RA-2">
+                                    <img src="assets/images/clark_logo.png" />
+                                    <h3>Research Analyst</h3>
+                                    <h4>Office of Strategic Analytics and Institutional Research (STAIR)</h4>
+                                    <h4>Clark University</h4>
+                                    <label><i class="uil uil-calender"></i> Sep 2024 to <i
+                                            class="uil uil-calender"></i>Present </label>
+                                    <div class="experience-box-details-responsibilities">
+                                        <h4>About:</h4>
+                                        <p class="experience-about">
+                                            At STAIR, I am responsible for automating processes to enhance data
+                                            efficiency. My work includes developing Python scripts to automate the
+                                            cleaning and processing of large survey datasets. I also ensure that the
+                                            latest data is updated on our Tableau dashboards. Additionally, I contribute
+                                            to building and maintaining interactive dashboards in Tableau, providing
+                                            valuable insights for academic departments.
+                                        </p>
+                                        <br />
+                                        <h4>Work Highlights: </h4>
+                                        <li>Automated ETL pipelines using Python, reducing data processing time by 30%
+                                            while ensuring 100% accuracy.
+                                        </li>
+                                        <li>
+                                            Designed interactive Tableau dashboards to improve decision-making for 50+
+                                            stakeholders, increasing operational efficiency by 40%.
+                                        </li>
+                                        <li>
+                                            Collaborated with team members to identify emerging patterns within
+                                            datasets, contributing to strategic planning and institutional enhancements.
+                                        </li>
+                                    </div>
+                                    
+                                    <div class="project-box-details-tech">
+                                        <h4>Tech Stack:</h4>
+                                        <span>Python</span>
+                                        <span>Tableau</span>
+                                        <span>Pandas</span>
+                                        <span>ETL</span>
+                                        <span>Statistical Analysis</span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience-box" onclick="showExperienceDetails('RA')">
+                            <img src="assets/images/clark_logo.png" />
+                            <h3>Research Assistant</h3>
+                            <label>@Clark University</label>
+                            <label><i class="uil uil-calender"></i> Dec 2023 - Present </label>
+                        </div>
+                        <div id="experienceModal-RA" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeExperienceDetails('RA')">&times;</span>
+                                <div class="experience-box-details-RA">
+                                    <img src="assets/images/clark_logo.png" />
+                                    <h3>Research Assistant</h3>
+                                    <h4>Department of Computer Science</h4>
+                                    <h4>Clark University</h4>
+                                    <label><i class="uil uil-calender"></i> Dec 2023 to <i
+                                            class="uil uil-calender"></i>Present </label>
+                                    <div class="experience-box-details-responsibilities">
+                                        <h4>Research Focus: </h4>
+
+                                        <p class="research-content">
+                                            The study explored innovative ways to personalize content on social media
+                                            using AI-driven technologies, aiming to understand user interactions and
+                                            optimize engagement through tailored recommendations.
+                                        </p>
+                                        <h4>Approach: </h4>
+                                        <div class="research-content">
+                                            <p>
+                                                The research involved designing and testing three distinct experimental
+                                                setups:
+                                            </p>
+                                            <li>
+                                                <b>Keyword/Hashtag Control:</b> Users rated keywords and hashtags to
+                                                influence content
+                                                recommendations.
+                                            </li>
+
+                                            <li>
+                                                <b>Video Feedback: </b> Personalized recommendations were adjusted based
+                                                on
+                                                user likes
+                                                after watching a set of ten videos.
+                                            </li>
+
+                                            <li>
+                                                <b>AI-Powered Chatbot:</b> A conversational chatbot dynamically tailored
+                                                recommendations by analyzing user inputs and preferences.
+                                            </li>
+                                        </div>
+                                        <h4>Key Contributions:</h4>
+                                        <div class="research-content">
+                                            <li>
+                                                Developed an AI-powered recommendation system using OpenAI APIs, increasing user engagement by 60%
+                                            </li>
+                                            <li>
+                                                Architected backend solutions that process and analyse large datasets, optimizing the interaction between AI-driven recommendations and research applications
+                                            </li>
+                                            <li>
+                                                Optimized algorithms, enhancing recommendation accuracy by 30% through iterative refinements based on user behaviour and feedback loops
+
+                                            </li>                                            
+                                            <li>
+                                                Streamlined workflows for gathering Social Media videos to enable real-time analysis and
+                                                integration of user responses, advancing the research objectives
+                                                effectively.
+                                            </li>
+                                            <li>
+                                                Designed and implemented RESTful APIs, enabling seamless data exchange between AI models and research applications, supporting advanced Human-Computer Interaction (HCI) studies
+                                            </li>
+                                            <li>
+                                                Ensured system scalability and high performance by incorporating load balancing, database indexing, and efficient data retrieval strategies, reducing latency and improving throughput
+                                            </li>
+                                        </div>
+                                        <p class="research-content">
+                                            This project showcased the effectiveness of combining user feedback
+                                            mechanisms with AI technologies to deliver highly personalized content. It contributed
+                                            valuable insights into user behavior, paving the way for future research and
+                                            applications in AI-driven social media systems.
+                                        </p>
+                                        <div class="project-box-details-tech">
+                                            <h4>Tech Stack:</h4>
+                                            <span>Python</span>
+                                            <span>Django</span>
+                                            <span>Flask</span>
+                                            <span>MySQL</span>
+                                            <span>AWS</span>
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>ReactJs</span>
+                                            <span>MaterialUI</span>
+                                            <span>Azure</span>
+                                            <span>OpenAI API's</span>
+                                            <span>TikTok API's</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience-box" onclick="showExperienceDetails('CG')">
+                            <img src="assets/images/capgemini_logo.png" />
+                            <h3>Senior Software Engineer</h3>
+                            <label>@Capgemini</label>
+                            <label><i class="uil uil-calender"></i> 2021 - 2023</label>
+                        </div>
+                        <div id="experienceModal-CG" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeExperienceDetails('CG')">&times;</span>
+                                <div class="experience-box-details-CG">
+                                    <img src="assets/images/capgemini_logo.png" />
+                                    <h3>Senior Software Engineer @Capgemini </h3>
+                                    <label><i class="uil uil-calender"></i> Jun 2021 to <i class="uil uil-calender"></i>
+                                        Jun 2023 </label>
+                                    <div class="experience-box-details-responsibilities">
+                                        <h4>Responsibilities: </h4>
+                                        <li>
+                                            Developed RESTful APIs and microservices using Java, Spring Boot and React.js, 
+                                            contributing to platform modernization by transforming monolithic applications with 40% improved response times 
+                                        </li>
+                                        <li>
+                                            Architected secure backend infrastructure using Spring Cloud Gateway and Spring Security, 
+                                            implementing OAuth authentication that reduced security incidents by 45%
+                                        </li>
+                                        <li>
+                                            Built responsive React components for user centric portals, 
+                                            focusing on user experience and performance optimization through efficient state management 
+                                        </li>
+                                        <li>
+                                            Implemented comprehensive testing strategies(Test Driven Development)  using JUnit and Mockito, 
+                                            achieving 60% increase in test coverage and 20% reduction in production defects
+                                        </li>
+                                        <li>
+                                            Contributed to DevOps practices by maintaining CI/CD pipelines with Jenkins and GitHub, 
+                                            supporting automated deployment and release cycles 
+
+                                        </li>
+                                        <li>
+                                            Participated in cloud migration from PCF to Kubernetes, 
+                                            gaining hands-on experience with container orchestration and cloud infrastructure 
+
+                                        </li>
+                                        <li>
+                                            Demonstrated strong debugging skills and improved the system performance by
+                                            40%.
+                                        </li>
+                                        <li>
+                                            Collaborated in Agile ceremonies and occasionally facilitated Scrum events, 
+                                            ensuring timely delivery of sprint commitments using Jira
+                                        </li>
+                                        <li>
+                                            <b>Pat On Back</b> award for supporting the team and for providing major
+                                            contribution to the project.
+                                        </li>
+                                    </div>
+                                    <div class="project-box-details-tech">
+                                        <h4>Tech Stack:</h4>
+                                        <span>JAVA</span>
+                                        <span>Spring Boot</span>
+                                        <span>Spring Cloud Gateway</span>
+                                        <span>Spring Security</span>
+                                        <span>Gradle</span>
+                                        <span>Hibernate</span>
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>ReactJs</span>
+                                        <span>MaterialUI</span>
+                                        <span>Oracle</span>
+                                        <span>Jenkins</span>
+                                        <span>SonarQube</span>
+                                        <span>NexusIQ</span>
+                                        <span>Git</span>
+                                        <span>Junit</span>
+                                        <span>Test Driven Development</span>
+                                        <span>Selenium</span>
+                                        <span>Cucumber</span>
+                                        <span>Kubernetes</span>
+                                        <span>Pivot Cloud Foundry</span>
+                                        <span>Agile</span>
+                                        <span>Jira</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience-box" onclick="showExperienceDetails('intern')">
+                            <img src="assets/images/capgemini_logo.png" />
+                            <h3>Internship</h3>
+                            <label>@Capgemini</label>
+                            <label><i class="uil uil-calender"></i> 2021 </label>
+                        </div>
+                        <div id="experienceModal-intern" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeExperienceDetails('intern')">&times;</span>
+                                <div class="experience-box-details-intern">
+                                    <img src="assets/images/capgemini_logo.png" />
+                                    <h3>Internship @Capgemini </h3>
+                                    <label><i class="uil uil-calender"></i> Feb 2021 to <i class="uil uil-calender"></i>
+                                        May 2021 </label>
+                                    <div class="experience-box-details-responsibilities">
+                                        <h4>Responsibilities: </h4>
+                                        <li>
+                                            Designed and developed a credit card application using Spring Boot and React.js, 
+                                            implementing secure transaction processing and user authentication 
+                                        </li>
+                                        <li>
+                                            Implemented multi-threading for concurrent request handling and transaction management, improving application response time by 20% 
+                                        </li>
+                                        <li>
+                                            Built database architecture using PostgreSQL and Hibernate ORM, ensuring data integrity and efficient transaction processing 
+
+                                        </li>
+
+                                        <li>
+                                            Applied Test-Driven Development (TDD) methodology, creating comprehensive unit tests for critical transaction workflows 
+
+                                        </li>
+                                        <li>
+                                            Integrated transaction management in Spring Boot for handling sensitive credit card operations, ensuring ACID compliance and data consistency
+                                        </li>
+                                    </div>
+                                    <div class="project-box-details-tech">
+                                        <h4>Tech Stack:</h4>
+                                        <span>JAVA</span>
+                                        <span>SpringBoot</span>
+                                        <span>Hibernate</span>
+                                        <span>ReactJs</span>
+                                        <span>PostgreSQL</span>
+                                        <span>Jenkins</span>
+                                        <span>Git</span>
+                                        <span>Junit</span>
+                                        <span>Test Driven Development</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- -------------- PROJECT BOX ---------------- -->
+
+                <section class="section" id="projects">
+                    <div class="top-header">
+                        <h1>Projects</h1>
+                    </div>
+                    <div class="project-container">
+
+                        <!-- Online Testing Application -->
+
+                        <div class="project-box" id="project-box-p3" onclick="showProjectDetails('p3')">
+                            <h3>Online Testing Application</h3>
+                            <label>Capstone Project</label>
+                            <label><i class="uil uil-calender"></i> Aug 2024 to <i class="uil uil-calender"></i> Dec
+                                2024 </label>
+                        </div>
+                        <div id="projectModel-p3" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeProjectDetails('p3')">&times;</span>
+                                <div class="project-box-details-p3">
+                                    <!-- TODO images slide like an show case of the project details -->
+                                    <h3>Online Testing Application </h3>
+                                    <label><i class="uil uil-calender"></i> Aug 2024 to <i class="uil uil-calender"></i>
+                                        Dec 2024 </label>
+                                    <!-- <div class="slideshow-container">
+                                        <div class="mySlides-p2 fade">
+                                            <img src="assets/images/project_2_1.png" style="width:50%; height:50%;">
+                                        </div>
+                                        <div class="mySlides-p2 fade">
+                                            <img src="assets/images/project_2_2.png" style="width:50%; height:50%;">
+                                        </div>
+                                        <div class="mySlides-p2 fade">
+                                            <img src="assets/images/project_2_3.png" style="width:40%; height:50%;">
+                                        </div>
+                                        <div class="mySlides-p2 fade">
+                                            <img src="assets/images/project_2_4.png" style="width:60%; height:50%;">
+                                        </div>
+                                    </div> -->
+                                    <div class="project-box-details-tech">
+                                        <h4>Tech Stack:</h4>
+                                        <span>Java</span>
+                                        <span>SpringBoot</span>
+                                        <span>SpringCloud</span>
+                                        <span>SpringSecurity</span>
+                                        <span>JavaScript</span>
+                                        <span>ReactJs</span>
+                                        <span>MySQL</span>
+                                        <span>Selenium</span>
+                                        <span>JUnit</span>
+                                        <span>Mockito</span>
+                                        <span>Git</span>
+                                        <span>GitHub</span>
+                                        <span>AWS</span>
+                                    </div>
+                                    <div class="project-box-details-desc">
+                                        <h4>Overview: </h4>
+                                        <!-- <div class="research-content"> -->
+                                            Online Testing Platform designed to streamline the process of exam creation,
+                                            evaluation, and grade publication. It enables instructors to efficiently
+                                            assign exams to students, notify them in advance, and ensure timely updates
+                                            through automated notifications. The system is built with a robust backend
+                                            and a user-friendly web interface to simplify the management of exams and
+                                            improve the overall user experience for both instructors and students.
+
+                                        <!-- </div> -->
+                                         
+                                        <br /><br />
+                                        <h4>Features: </h4>
+
+                                        <li>
+                                            <b>Microservices Design:</b> Architected a modular, scalable system using Spring
+                                            Boot and Spring Cloud for seamless service interaction.
+
+                                        </li>
+                                        <li>
+                                            <b>Secure Exam Management:</b> Enabled instructors to create, assign, and evaluate
+                                            exams with integrated grade publishing and secure access via Spring
+                                            Security.
+
+                                        </li>
+                                        <li>
+                                            <b>Automated Notifications:</b> Built a system to deliver timely alerts, keeping
+                                            students informed about exams and updates.
+
+                                        </li>
+                                        <li>
+                                            <b>Dynamic Frontend:</b> Developed an interactive, responsive interface with
+                                            React.js, ensuring a smooth user experience.
+
+                                        </li>
+
+                                        <li>
+                                            <b>Scalable Performance:</b> Leveraged microservices and cloud-native practices to
+                                            ensure reliability and adaptability under load.
+
+                                        </li>
+
+                                         <br /><br />
+                                        <h4>Details: </h4>
+                                        <li>
+                                            Designed and implemented a scalable full-stack application using React.js and Spring Boot, ensuring seamless user experiences and high performance under heavy loads
+
+                                        </li>
+                                        <li>
+                                            Developed and optimized RESTful APIs, enabling efficient communication 
+                                            between front-end and back-end systems
+
+                                        </li>
+                                        <li>
+                                            Conducted robust automation testing using Selenium and Cucumber, 
+                                            delivering a bug-free application and ensuring high-quality performance
+
+                                        </li>
+                                    </div>
+                                    <div class="project-box-details-links">
+                                        <h4>Source Code: <a
+                                                href="https://github.com/venkatasaipunnam/online-testing-backend">github.com/online-testing</a>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email Application -->
+                        <div class="project-box" id="project-box-p4" onclick="showProjectDetails('p4')">
+                            <h3>Email Application</h3>
+                            <label>Personal Project</label>
+                            <label><i class="uil uil-calender"></i> Apr 2024 to <i class="uil uil-calender"></i> Jun
+                                2024 </label>
+                        </div>
+                        <div id="projectModel-p4" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeProjectDetails('p4')">&times;</span>
+                                <div class="project-box-details-p4">
+                                    <!-- TODO images slide like an show case of the project details -->
+                                    <h3>Email Application </h3>
+                                    <label><i class="uil uil-calender"></i> Apr 2024 to <i class="uil uil-calender"></i>
+                                        Jun 2024 </label>
+                                    <!-- <div class="slideshow-container">
+                                        <div class="mySlides-p2 fade">
+                                            <img src="assets/images/project_2_1.png" style="width:50%; height:50%;">
+                                        </div>
+                                        <div class="mySlides-p2 fade">
+                                            <img src="assets/images/project_2_2.png" style="width:50%; height:50%;">
+                                        </div>
+                                        <div class="mySlides-p2 fade">
+                                            <img src="assets/images/project_2_3.png" style="width:40%; height:50%;">
+                                        </div>
+                                        <div class="mySlides-p2 fade">
+                                            <img src="assets/images/project_2_4.png" style="width:60%; height:50%;">
+                                        </div>
+                                    </div> -->
+                                    <div class="project-box-details-tech">
+                                        <h4>Key Stack:</h4>
+                                        <span>Java</span>
+                                        <span>SpringBoot</span>
+                                        <span>MySQL</span>
+                                        <span>SMTP</span>
+                                        <span>JUnit</span>
+                                        <span>Mockito</span>
+                                        <span>Git</span>
+                                        <span>GitHub</span>
+                                        <span>AWS</span>
+                                    </div>
+                                    <div class="project-box-details-desc">
+                                        <h4>Overview: </h4>
+                                        <div class="research-content">
+                                            Email Application Service designed to facilitate efficient email
+                                            communication for registered applications.
+                                            It provides APIs for clients to
+                                            send emails to their recipients, supporting both single and bulk email
+                                            delivery. With features like customizable messages and template-based
+                                            emails, the application ensures flexibility and ease of use for various
+                                            email workflows.
+                                        </div>
+                                        <h4>Features: </h4>
+                                        <div class="research-content">
+                                            <li>
+                                                <b>API-Driven Communication:</b> Designed APIs to enable seamless email delivery
+                                                for client applications.
     
-      gtag('config', 'G-6L6PDZTZ89');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                            </li>
+                                            <li>
+                                                <b>Customizable Emails:</b> Enabled dynamic message customization and support for
+                                                template-based email generation.
+    
+                                            </li>
+                                            <li>
+                                                <b>Bulk Email Capability:</b> Developed functionality to send emails to single or
+                                                multiple recipients simultaneously.
+    
+                                            </li>
+                                            <li>
+                                                <b>Robust Email Delivery:</b> Implemented reliable email handling using SMTP
+                                                protocol, ensuring high delivery success rates.
+    
+                                            </li>
+    
+                                            <li>
+                                                <b>Scalable Architecture:</b> Built the application with Java and Spring Boot,
+                                                ensuring scalability and maintainability.
+    
+                                            </li>
 
-    <!-- --------- UNICONS ---------- -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-
-    <!-- --------- CSS ---------- -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- --------- FAVICON ---------- -->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-
-    <title>Venkata Sai Reddy</title>
-</head>
-
-<body>
-    <div class="container">
-        <!-- --------------- HEADER --------------- -->
-        <nav id="header">
-            <div class="nav-logo">
-                <p class="nav-name">Venkata Sai Reddy</p>
-            </div>
-            <div class="nav-menu" id="myNavMenu">
-                <ul class="nav_menu_list">
-                    <li class="nav_list">
-                        <a href="#home" class="nav-link active-link">Home</a>
-                        <div class="circle"></div>
-                    </li>
-                    <li class="nav_list">
-                        <a href="#about" class="nav-link">About</a>
-                        <div class="circle"></div>
-                    </li>
-                    <li class="nav_list">
-                        <a href="#skills" class="nav-link">Skills</a>
-                        <div class="circle"></div>
-                    </li>
-                    <li class="nav_list">
-                        <a href="#profile" class="nav-link">Profile</a>
-                        <div class="circle"></div>
-                    </li>
-                    <li class="nav_list">
-                        <a href="#experience" class="nav-link">Experience</a>
-                        <div class="circle"></div>
-                    </li>
-                    <li class="nav_list">
-                        <a href="#projects" class="nav-link">Projects</a>
-                        <div class="circle"></div>
-                    </li>
-                    <li class="nav_list">
-                        <a href="#contact" class="nav-link">Contact</a>
-                        <div class="circle"></div>
-                    </li>
-                </ul>
-            </div>
-            <div class="nav-button">
-                <button class="btn" onclick="downloadResume()">Download CV <i class="uil uil-file-alt"></i></button>
-            </div>
-            <div class="nav-menu-btn">
-                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
-            </div>
-        </nav>
-
-
-        <!-- -------------- MAIN ---------------- -->
-        <main class="wrapper">
-            <!-- -------------- FEATURED BOX ---------------- -->
-            <section class="featured-box" id="home">
-                <div class="featured-text">
-                    <div class="featured-text-card">
-                    </div>
-                    <div class="featured-name">
-                        <p>I'm <span class="typedText"></span></p>
-                    </div>
-                    <div class="featured-text-info">
-                        <p>Experienced full stack developer adept at crafting robust and scalable web applications,
-                            combining expertise in frontend development with a strong command of backend technologies.
-                        </p>
-                    </div>
-                    <div class="featured-text-btn">
-                        <button class="btn blue-btn" onclick="navigateTo('contact')">Hire Me</button>
-                        <button class="btn" onclick="downloadResume()">Download CV <i class="uil uil-file-alt"></i></button>
-                    </div>
-                    <div class="social_icons">
-                        <div class="icon"><i class="uil uil-linkedin-alt" onclick="redirectTo('linkedin')"></i></div>
-                        <div class="icon"><i class="uil uil-github-alt" onclick="redirectTo('github')"></i></div>
-                        <div class="icon"><i class="uil uil-instagram" onclick="redirectTo('instagram')"></i></div>
-                    </div>
-                </div>
-                <div class="featured-image">
-                    <div class="image">
-                        <img src="assets/images/avatar.jpg" alt="avatar">
-                    </div>
-                </div>
-                <div class="scroll-icon-box">
-                    <a href="#about" class="scroll-btn">
-                        <i class="uil uil-mouse-alt"></i>
-                        <p>Scroll Down</p>
-                    </a>
-                </div>
-
-            </section>
-            <!-- -------------- ABOUT BOX ---------------- -->
-            <section class="section" id="about">
-                <div class="top-header">
-                    <h1>About Me</h1>
-                </div>
-                <div class="row">
-                    <div class="about-info">
-                        <h3>My introduction</h3>
-                        <p>
-                            I am a full stack developer. Leveraging my expertise in both backend and front-end
-                            technologies,
-                            I create visually stunning and intuitive user interfaces that deliver exceptional user
-                            experiences.
-                            I possess a strong command of back-end frameworks like SpringBoot and Django, databases, and
-                            cloud services,
-                            enabling me to build scalable and high-performing server-side architectures.
-                            Throughout my career, I have honed my skills in agile methodologies,
-                            collaborative teamwork, and continuous integration practices,
-                            allowing me to deliver innovative solutions that seamlessly blend aesthetics with
-                            functionality,
-                            exceeding client expectations every step of the way.
-                        </p>
-                        <div class="about-btn">
-                            <button class="btn" onclick="downloadResume()">Download CV <i class="uil uil-import"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section" id="skills">
-                <div class="top-header">
-                    <h1>Skills</h1>
-                </div>
-                <div class="row">
-                    <div class="skills-box">
-                        <div class="skills-header">
-                            <h3>Backend</h3>
-                        </div>
-                        <div class="skills-list">
-                            <span>JAVA</span>
-                            <span>Python</span>
-                            <span>SpringBoot</span>
-                            <span>Django</span>
-                            <span>Rest API's</span>
-                        </div>
-                    </div>
-                    <div class="skills-box">
-                        <div class="skills-header">
-                            <h3>Frontend</h3>
-                        </div>
-                        <div class="skills-list">
-                            <span>React</span>
-                            <span>HTML5</span>
-                            <span>CSS</span>
-                            <span>Bootstrap</span>
-                            <span>MaterialUI</span>
-                        </div>
-                    </div>
-                    <div class="skills-box">
-                        <div class="skills-header">
-                            <h3>Database</h3>
-                        </div>
-                        <div class="skills-list">
-                            <span>MySQL</span>
-                            <span>PostgreSQL</span>
-                            <span>Oracle</span>
-                            <span>MongoDB</span>
-                        </div>
-                    </div>
-                    <div class="skills-box">
-                        <div class="skills-header">
-                            <h3>Testing</h3>
-                        </div>
-                        <div class="skills-list">
-                            <span>Selenium</span>
-                            <span>Junit</span>
-                            <span>Mockito</span>
-                            <span>Automation</span>
-                            <span>Test Driven Development</span>
-                        </div>
-                    </div>
-                    <div class="skills-box">
-                        <div class="skills-header">
-                            <h3>Other</h3>
-                        </div>
-                        <div class="skills-list">
-                            <span>Git</span>
-                            <span>GitHub</span>
-                            <span>AWS</span>
-                            <span>PCF</span>
-                            <span>Agile</span>
-                            <span>Jira</span>
-                            <span>Jenkins</span>
-                            <span>SonarQube</span>
-                            <span>OpenAI</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- -------------- Profile BOX ---------------- -->
-
-            <section class="section" id="profile">
-                <div class="top-header">
-                    <h1>My Industrial Profile</h1>
-                </div>
-                <div class="profile-container">
-
-                    <div class="profile-box" onclick="navigateTo('experience')">
-                        <i class="uil uil-briefcase-alt"></i>
-                        <h3>Experience</h3>
-                        <label>2+ Years in the Industry</label>
-
-                    </div>
-                    <div class="profile-box"  onclick="navigateTo('projects')">
-                        <i class="uil uil-award"></i>
-                        <h3>Projects</h3>
-                    </div>
-                </div>
-            </section>
-
-            <!-- -------------- Experience BOX ---------------- -->
-
-            <section class="section" id="experience">
-                <div class="top-header">
-                    <h1>Experience</h1>
-                </div>
-                <div class="experience-container">
-                    <div class="experience-box" onclick="showExperienceDetails('RA')">
-                        <img src="assets/images/clark_logo.png" />
-                        <h3>Research Assistant</h3>
-                        <label>@Clark University</label>
-                        <label><i class="uil uil-calender"></i> Dec 2023 - Present </label>
-                    </div>
-                    <div id="experienceModal-RA" class="modal">
-                        <div class="modal-content">
-                            <span class="close" onclick="closeExperienceDetails('RA')">&times;</span>
-                            <div class="experience-box-details-RA">
-                                <img src="assets/images/clark_logo.png" />
-                                <h3>Research Assistant @Clark University </h3>
-                                <label><i class="uil uil-calender"></i> Dec 2023 to <i class="uil uil-calender"></i>Present </label>
-                                <div class="experience-box-details-responsibilities">
-                                    <h4>Responsibilities: </h4>
-                                    <li>
-                                        Spearheaded development of backend application for research projects, integrating Django framework, MySQL
-database, and Azure cloud services to streamline data management and analysis.
-                                    </li>
-                                    <li>
-                                        Implemented AI-powered recommendation system by integrating OpenAI API, providing tailored suggestions to
-enhance user experience and increase engagement by 60%.
-                                    </li>
-                                    <li>
-                                        Conducted rigorous testing and debugging, maintaining 100% application uptime, and facilitating seamless
-deployments to Azure environments using Git version control.
-                                    </li>
-                                    <li>
-                                        Demonstrated strong problem-solving skills by optimizing algorithms to improve recommendation accuracy by
-30%, based on user feedback and data-driven insights.
-                                    </li>
+                                        </div>
+                                        
+                                        <p class="research-content"> 
+                                            This service highlights my ability to create robust, API-driven solutions
+                                            tailored to diverse client needs, showcasing expertise in email systems and
+                                            backend development.
+                                        </p>
+                                    </div>
+                                    <div class="project-box-details-links">
+                                        <h4>Source Code: <a
+                                                href="https://github.com/venkatasaipunnam/email-api">github.com/email</a>
+                                        </h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="experience-box"  onclick="showExperienceDetails('CG')">
-                        <img src="assets/images/capgemini_logo.png" />
-                        <h3>Senior Software Engineer</h3>
-                        <label>@Capgemini</label>
-                        <label><i class="uil uil-calender"></i> 2021 - 2023</label>
-                    </div>
-                    <div id="experienceModal-CG" class="modal">
-                        <div class="modal-content">
-                            <span class="close" onclick="closeExperienceDetails('CG')">&times;</span>
-                            <div class="experience-box-details-CG">
-                                <img src="assets/images/capgemini_logo.png" />
-                                <h3>Senior Software Engineer @Capgemini </h3>
-                                <label><i class="uil uil-calender"></i> Jun 2021 to <i class="uil uil-calender"></i> Jun 2023 </label>
-                                <div class="experience-box-details-responsibilities">
-                                    <h4>Responsibilities: </h4>
-                                    <li>
-                                        Designed and implemented RESTful APIs enabling seamless integration of React frontends and Java Spring Boot backend.
-                                    </li>
-                                    <li>
-                                        Introduced automated testing and Test-Driven Development processes with JUnit, Mockito, Jest, and Enzyme,
-increasing test coverage by 60% and reducing post-release defects by 20%.
-                                    </li>
-                                    <li>
-                                        Developed and implemented robust and reusable methods, including APIs, for business logic in Java/Spring Boot.
-                                    </li>
-                                    <li>
-                                        Demonstrated strong debugging skills and improved the system performance by 40%.
-                                    </li>
-                                    <li>
-                                        Collaborated with cross-functional Agile teams using Jira to design, develop, and deliver high-quality software
-solutions adhering to requirements.
-                                    </li>
-                                    <li>
-                                        Pat On Back Award for supporting the team and for providing major contribution to the project.
-                                    </li>
+
+                        <!-- Credit Card Fraud Detection -->
+
+                        <div class="project-box" id="project-box-p2" onclick="showProjectDetails('p2')">
+                            <h3>Credit Card Fraud Detection</h3>
+                            <label>Personal ML Project</label>
+                            <label><i class="uil uil-calender"></i> Jan 2024 to <i class="uil uil-calender"></i> Mar
+                                2024 </label>
+                        </div>
+                        <div id="projectModel-p2" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeProjectDetails('p2')">&times;</span>
+                                <div class="project-box-details-p2">
+                                    <!-- TODO images slide like an show case of the project details -->
+                                    <h3>Credit Card Fraud Detection </h3>
+                                    <label><i class="uil uil-calender"></i> Jan 2024 to <i class="uil uil-calender"></i>
+                                        Mar 2024 </label>
+                                    <!-- <div class="slideshow-container">
+                                        <div class="mySlides-p2 fade">
+                                            <img src="assets/images/project_2_1.png" style="width:50%; height:50%;">
+                                        </div>
+                                        <div class="mySlides-p2 fade">
+                                            <img src="assets/images/project_2_2.png" style="width:50%; height:50%;">
+                                        </div>
+                                        <div class="mySlides-p2 fade">
+                                            <img src="assets/images/project_2_3.png" style="width:40%; height:50%;">
+                                        </div>
+                                        <div class="mySlides-p2 fade">
+                                            <img src="assets/images/project_2_4.png" style="width:60%; height:50%;">
+                                        </div>
+                                    </div> -->
+                                    <div class="project-box-details-tech">
+                                        <h4>Key Stack:</h4>
+                                        <span>Python</span>
+                                        <span>Numpy</span>
+                                        <span>Pandas</span>
+                                        <span>MatplotLib</span>
+                                        <span>KNN</span>
+                                        <span>K-Means</span>
+                                        <span>Random Forest</span>
+                                        <span>Ensemble Methods</span>
+                                    </div>
+                                    <div class="project-box-details-desc">
+                                        <h4>Description: </h4>
+                                        <li>
+                                            Developed accurate fraud detection system using XGBoost model achieving
+                                            94.56% accuracy, handling imbalanced dataset through oversampling
+                                            techniques.
+                                        </li>
+                                        <li>
+                                            Conducted extensive data preprocessing including feature extraction,
+                                            normalization, and encoding of categorical variables like transaction
+                                            category.
+                                        </li>
+                                        <li>
+                                            Identified key insights through exploratory & statistical analysis, such as
+                                            high-risk transaction categories, age groups, time periods, and locations
+                                            prone to fraud, enabling targeted fraud prevention strategies.
+                                        </li>
+                                        <li>
+                                            Interactive dashboards using Tableau and Power BI to visualize data trends &
+                                            support decision-making.
+                                        </li>
+                                    </div>
+                                    <div class="project-box-details-links">
+                                        <h4>Source Code: <a
+                                                href="https://github.com/venkatasaipunnam/credit-card-fraud-detection/blob/master/Notebook/CreditCardFraudDetection.ipynb">github.com/fraud-detection</a>
+                                        </h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="experience-box"  onclick="showExperienceDetails('intern')">
-                        <img src="assets/images/capgemini_logo.png" />
-                        <h3>Internship</h3>
-                        <label>@Capgemini</label>
-                        <label><i class="uil uil-calender"></i> 2021 </label>
-                    </div>
-                    <div id="experienceModal-intern" class="modal">
-                        <div class="modal-content">
-                            <span class="close" onclick="closeExperienceDetails('intern')">&times;</span>
-                            <div class="experience-box-details-intern">
-                                <img src="assets/images/capgemini_logo.png" />
-                                <h3>Internship @Capgemini </h3>
-                                <label><i class="uil uil-calender"></i> Feb 2021 to <i class="uil uil-calender"></i> May 2021 </label>
-                                <div class="experience-box-details-responsibilities">
-                                    <h4>Responsibilities: </h4>
-                                    <li>
-                                        Developed secure and scalable backend service using Java and Spring Boot framework, facilitating seamless
-communication with the front-end and PostgreSQL database.
-                                    </li>
-                                    <li>
-                                        Demonstrated strong problem-solving skills and improved the system performance by 20% using efficient
-algorithms.
-                                    </li>
-                                    <li>
-                                        Lead the team of 5 members in developing the project.
-                                    </li>
-                                </div>
-                            </div>
+
+                        <!-- Skill Workshop Application -->
+                        <div class="project-box" id="project-box-p1" onclick="showProjectDetails('p1')">
+                            <!-- <img src="assets/images/project_1_1.png" /> -->
+                            <h3>Skill Workshop</h3>
+                            <label>Course Work Project</label>
+                            <label><i class="uil uil-calender"></i> Aug 2023 to <i class="uil uil-calender"></i> Dec
+                                2023 </label>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- -------------- PROJECT BOX ---------------- -->
-
-            <section class="section" id="projects">
-                <div class="top-header">
-                    <h1>Projects</h1>
-                </div>
-                <div class="project-container">
-                    <div class="project-box" id="project-box-p1" onclick="showProjectDetails('p1')">
-                        <!-- <img src="assets/images/project_1_1.png" /> -->
-                        <h3>Skill Workshop</h3>
-                        <label>Course Work Project</label>
-                        <label><i class="uil uil-calender"></i> Aug 2023 to <i class="uil uil-calender"></i> Dec 2023 </label>
-                    </div>
-                    <div id="projectModel-p1" class="modal">
-                        <div class="modal-content">
-                            <span class="close" onclick="closeProjectDetails('p1')">&times;</span>
-                            <div class="project-box-details-p1">
-                                <!-- TODO images slide like an show case of the project details -->
-                                <h3>Skill Workshop Application </h3>
-                                <label><i class="uil uil-calender"></i> Aug 2023 to <i class="uil uil-calender"></i> Dec 2023 </label>
-                                <div class="slideshow-container">
-                                    <div class="mySlides-p1 fade">
-                                        <img src="assets/images/project_1_1.png" style="width:50%; height:50%;">
-                                    </div>
-                                    <div class="mySlides-p1 fade">
-                                        <img src="assets/images/project_1_2.png" style="width:50%; height:50%;">
-                                    </div>
-                                    <div class="mySlides-p1 fade">
-                                        <img src="assets/images/project_1_3.png" style="width:40%; height:50%;">
-                                    </div>
-                                    <!-- <div class="mySlides-p1 fade">
+                        <div id="projectModel-p1" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeProjectDetails('p1')">&times;</span>
+                                <div class="project-box-details-p1">
+                                    <!-- TODO images slide like an show case of the project details -->
+                                    <h3>Skill Workshop Application </h3>
+                                    <label><i class="uil uil-calender"></i> Aug 2023 to <i class="uil uil-calender"></i>
+                                        Dec 2023 </label>
+                                    <div class="slideshow-container">
+                                        <div class="mySlides-p1 fade">
+                                            <img src="assets/images/project_1_1.png" style="width:50%; height:50%;">
+                                        </div>
+                                        <div class="mySlides-p1 fade">
+                                            <img src="assets/images/project_1_2.png" style="width:50%; height:50%;">
+                                        </div>
+                                        <div class="mySlides-p1 fade">
+                                            <img src="assets/images/project_1_3.png" style="width:40%; height:50%;">
+                                        </div>
+                                        <!-- <div class="mySlides-p1 fade">
                                         <img src="assets/images/project_1_4.png" style="width:60%; height:50%;">
                                     </div> -->
-                                </div>
-                                <div class="project-box-details-tech">
-                                    <h4>Tech Stack:</h4>
-                                    <span>JAVA</span>
-                                    <span>SpringBoot</span>
-                                    <span>ReactJs</span>
-                                    <span>PostgreSQL</span>
-                                    <span>Jenkins</span>
-                                    <span>Git</span>
-                                    <span>Junit</span>
-                                    <span>Selenium</span>
-                                    <span>Automation</span>
-                                </div>
-                                <div class="project-box-details-desc">
-                                    <h4>Description:</h4>
-                                    <p>We have the Software Engineer Club at Clark University. We are planning to add the workshop application to the club page, where students can request the skills they are looking to learn as well as they can enrol the upcoming workshops, and the organizers, professors, and instructors can view the request and create a workshop event for students.</p>
-                                <br/>
-                                    <h4>Responsibilities: </h4>
-                                    <li>
-                                        Architected a scalable full-stack application, enabling seamless integration and efficient performance.
-                                    </li>
-                                    <li>
-                                        Developed secure and scalable backend service using Java and Spring Boot framework, facilitating seamless
-communication with the front-end and PostgreSQL database.
-                                    </li>
-                                    <li>
-                                        Demonstrated strong problem-solving skills and improved the system performance by 20% using efficient
-algorithms.
-                                    </li>
-                                    <li>
-                                        Lead the teams of 5 members in developing the project.
-                                    </li>
-                                </div>
-                                <div class="project-box-details-links">
-                                    <h4>Source Code: <a href="https://github.com/venkatasaipunnam/workshop-api" >github.com/workshop</a></h4>
-                                    <h4>Application Demo: <a href="https://drive.google.com/file/d/1dQaZP6AXT7NCWMxF4xYcgqV0bQLLQYxn/view?usp=sharing">Click Here</a></h4>
-                                    <h4>Automation: <a href="https://drive.google.com/file/d/1AYD3xSUTJMl--1YyZ0saRnhPXRwcJrbE/view?usp=sharing">Click Here</a></h4>
+                                    </div>
+                                    <div class="project-box-details-tech">
+                                        <h4>Tech Stack:</h4>
+                                        <span>JAVA</span>
+                                        <span>SpringBoot</span>
+                                        <span>ReactJs</span>
+                                        <span>PostgreSQL</span>
+                                        <span>Jenkins</span>
+                                        <span>Git</span>
+                                        <span>Junit</span>
+                                        <span>Selenium</span>
+                                        <span>Automation</span>
+                                    </div>
+                                    <div class="project-box-details-desc">
+                                        <h4>Description:</h4>
+                                        <p>We have the Software Engineer Club at Clark University. We are planning to
+                                            add the workshop application to the club page, where students can request
+                                            the skills they are looking to learn as well as they can enrol the upcoming
+                                            workshops, and the organizers, professors, and instructors can view the
+                                            request and create a workshop event for students.</p>
+                                        <br />
+                                        <h4>Responsibilities: </h4>
+                                        <li>
+                                            Architected a scalable full-stack application, enabling seamless integration
+                                            and efficient performance.
+                                        </li>
+                                        <li>
+                                            Developed secure and scalable backend service using Java and Spring Boot
+                                            framework, facilitating seamless
+                                            communication with the front-end and PostgreSQL database.
+                                        </li>
+                                        <li>
+                                            Demonstrated strong problem-solving skills and improved the system
+                                            performance by 20% using efficient
+                                            algorithms.
+                                        </li>
+                                        <li>
+                                            Lead the teams of 5 members in developing the project.
+                                        </li>
+                                    </div>
+                                    <div class="project-box-details-links">
+                                        <h4>Source Code: <a
+                                                href="https://github.com/venkatasaipunnam/workshop-api">github.com/workshop</a>
+                                        </h4>
+                                        <h4>Application Demo: <a
+                                                href="https://drive.google.com/file/d/1dQaZP6AXT7NCWMxF4xYcgqV0bQLLQYxn/view?usp=sharing">Click
+                                                Here</a></h4>
+                                        <h4>Automation: <a
+                                                href="https://drive.google.com/file/d/1AYD3xSUTJMl--1YyZ0saRnhPXRwcJrbE/view?usp=sharing">Click
+                                                Here</a></h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- <div class="project-box" id="project-box-p2" onclick="showProjectDetails('p2')">
-                        <h3>Credit Card Fraud Detection</h3>
-                        <label>Personal ML Project</label>
-                        <label><i class="uil uil-calender"></i> Jan 2024 to <i class="uil uil-calender"></i> Mar 2024 </label>
-                    </div> -->
-                    <div id="projectModel-p2" class="modal">
-                        <div class="modal-content">
-                            <span class="close" onclick="closeProjectDetails('p2')">&times;</span>
-                            <div class="project-box-details-p2">
-                                <!-- TODO images slide like an show case of the project details -->
-                                <h3>Credit Card Fraud Detection </h3>
-                                <label><i class="uil uil-calender"></i> Jan 2024 to <i class="uil uil-calender"></i> Mar 2024 </label>
-                                <div class="slideshow-container">
-                                    <div class="mySlides-p2 fade">
-                                        <img src="assets/images/project_2_1.png" style="width:50%; height:50%;">
-                                    </div>
-                                    <div class="mySlides-p2 fade">
-                                        <img src="assets/images/project_2_2.png" style="width:50%; height:50%;">
-                                    </div>
-                                    <div class="mySlides-p2 fade">
-                                        <img src="assets/images/project_2_3.png" style="width:40%; height:50%;">
-                                    </div>
-                                    <div class="mySlides-p2 fade">
-                                        <img src="assets/images/project_2_4.png" style="width:60%; height:50%;">
-                                    </div>
+
+                    </div>
+                </section>
+
+
+                <!-- -------------- CONTACT BOX ---------------- -->
+
+                <section class="section" id="contact">
+                    <div class="top-header">
+                        <h1>Get in touch</h1>
+                        <span>Are you ready to elevate your team with exceptional talent? Let's connect and explore how
+                            my skills can drive our company's success!</span>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="contact-info">
+                                <h2>A Short Meeting <i class="uil uil-corner-right-down"></i></h2>
+                                <p><i class="uil uil-envelope"></i> Email: venkatasai1478@gmail.com</p>
+                                <p><i class="uil uil-phone"></i> Tel: +1 774 535 0653</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-control">
+                                <div class="form-inputs">
+                                    <input type="text" class="input-field" placeholder="Name" id="name">
+                                    <input type="text" class="input-field" placeholder="Email" id="email">
                                 </div>
-                                <div class="project-box-details-tech">
-                                    <h4>Key Stack:</h4>
-                                    <span>Python</span>
-                                    <span>Numpy</span>
-                                    <span>Pandas</span>
-                                    <span>MatplotLib</span>
-                                    <span>KNN</span>
-                                    <span>K-Means</span>
-                                    <span>Random Forest</span>
-                                    <span>Ensemble Methods</span>
+                                <div class="text-area">
+                                    <textarea placeholder="Message" id="message"></textarea>
                                 </div>
-                                <div class="project-box-details-desc">
-                                    <h4>Description: </h4>
-                                    <li>
-                                        Architected a scalable full-stack application, enabling seamless integration and efficient performance.
-                                    </li>
-                                    <li>
-                                        Developed secure and scalable backend service using Java and Spring Boot framework, facilitating seamless
-communication with the front-end and PostgreSQL database.
-                                    </li>
-                                    <li>
-                                        Demonstrated strong problem-solving skills and improved the system performance by 20% using efficient
-algorithms.
-                                    </li>
-                                    <li>
-                                        Lead the teams of 5 members in developing the project.
-                                    </li>
-                                </div>
-                                <div class="project-box-details-links">
-                                    <h4>Source Code: <a href="https://github.com/venkatasaipunnam/workshop-api" >github.com/workshop</a></h4>
-                                    <h4>Application Demo: <a href="https://drive.google.com/file/d/1dQaZP6AXT7NCWMxF4xYcgqV0bQLLQYxn/view?usp=sharing">Click Here</a></h4>
-                                    <h4>Automation: <a href="https://drive.google.com/file/d/1AYD3xSUTJMl--1YyZ0saRnhPXRwcJrbE/view?usp=sharing">Click Here</a></h4>
+                                <div class="form-button">
+                                    <button class="btn" onclick="sendEmail()">Send <i
+                                            class="uil uil-message"></i></button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </section>
+
+            </main>
+
+
+            <!-- --------------- FOOTER --------------- -->
+            <footer>
+                <div class="top-footer">
+                    <p>Venkata Sai Reddy Punnam</p>
                 </div>
-            </section>
-
-
-            <!-- -------------- CONTACT BOX ---------------- -->
-
-            <section class="section" id="contact">
-                <div class="top-header">
-                    <h1>Get in touch</h1>
-                    <span>Are you ready to elevate your team with exceptional talent? Let's connect and explore how my skills can drive our company's success!</span>
+                <div class="middle-footer">
+                    <ul class="footer-menu">
+                        <li class="footer_menu_list">
+                            <a href="#home">Home</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#skills">Skills</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#profile">Profile</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#expereince">Experience</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="contact-info">
-                            <h2>Hire Me <i class="uil uil-corner-right-down"></i></h2>
-                            <p><i class="uil uil-envelope"></i> Email: venkatasai1478@gmail.com</p>
-                            <p><i class="uil uil-phone"></i> Tel: +1 774 535 0653</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="form-control">
-                            <div class="form-inputs">
-                                <input type="text" class="input-field" placeholder="Name" id="name">
-                                <input type="text" class="input-field" placeholder="Email" id="email">
-                            </div>
-                            <div class="text-area">
-                                <textarea placeholder="Message" id="message"></textarea>
-                            </div>
-                            <div class="form-button">
-                                <button class="btn" onclick="sendEmail()">Send <i class="uil uil-message"></i></button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="footer-social-icons">
+                    <div class="icon" onclick="redirectTo('linkedin')"><i class="uil uil-linkedin-alt"></i></div>
+                    <div class="icon" onclick="redirectTo('github')"><i class="uil uil-github-alt"></i></div>
+                    <div class="icon" onclick="redirectTo('instagram')"><i class="uil uil-instagram"></i></div>
                 </div>
-            </section>
+                <div class="bottom-footer">
+                    <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Venkata Sai Reddy Punnam</a> -
+                        All
+                        rights reserved</p>
+                </div>
+            </footer>
 
-        </main>
+        </div>
 
+        <!-- ----- TYPING JS Link ----- -->
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-        <!-- --------------- FOOTER --------------- -->
-        <footer>
-            <div class="top-footer">
-                <p>Venkata Sai Reddy Punnam</p>
-            </div>
-            <div class="middle-footer">
-                <ul class="footer-menu">
-                    <li class="footer_menu_list">
-                        <a href="#home">Home</a>
-                    </li>
-                    <li class="footer_menu_list">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="footer_menu_list">
-                        <a href="#skills">Skills</a>
-                    </li>
-                    <li class="footer_menu_list">
-                        <a href="#profile">Profile</a>
-                    </li>
-                    <li class="footer_menu_list">
-                        <a href="#expereince">Experience</a>
-                    </li>
-                    <li class="footer_menu_list">
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li class="footer_menu_list">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-social-icons">
-                <div class="icon" onclick="redirectTo('linkedin')"><i class="uil uil-linkedin-alt"></i></div>
-                <div class="icon" onclick="redirectTo('github')"><i class="uil uil-github-alt" ></i></div>
-                <div class="icon" onclick="redirectTo('instagram')"><i class="uil uil-instagram"></i></div>
-            </div>
-            <div class="bottom-footer">
-                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Venkata Sai Reddy Punnam</a> - All
-                    rights reserved</p>
-            </div>
-        </footer>
+        <!-- ----- SCROLL REVEAL JS Link----- -->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-    </div>
-
-    <!-- ----- TYPING JS Link ----- -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-    <!-- ----- SCROLL REVEAL JS Link----- -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- ----- MAIN JS ----- -->
-    <script src="assets/js/main.js"></script>
-</body>
+        <!-- ----- MAIN JS ----- -->
+        <script src="assets/js/main.js"></script>
+    </body>
 
 </html>
